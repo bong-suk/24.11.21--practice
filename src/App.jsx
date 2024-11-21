@@ -9,11 +9,20 @@ const BlueButton = styled.button`
   width: 200px;
 `;
 
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+`;
+
 function App() {
   return (
     <>
-      <div>hello</div>
-      <BlueButton>파란색 버튼</BlueButton>
+      <Container>
+        <div>hello</div>
+        <BlueButton>파란색 버튼</BlueButton>
+      </Container>
     </>
   );
 }
