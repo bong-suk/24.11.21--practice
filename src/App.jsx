@@ -25,6 +25,11 @@ const BigTextBigBlueButton = styled(BigBlueButton)`
   font-weight: 900;
 `;
 
+const PropsButton = styled.button`
+  background-color: ${(props) => props.backgroundColor || "white"};
+  color: ${(props) => props.textColor || "black"};
+`;
+
 function App() {
   return (
     <>
@@ -32,7 +37,10 @@ function App() {
         <div>hello</div>
         <BlueButton>파란색 버튼</BlueButton>
         <BigBlueButton>커다란 파란색 버튼</BigBlueButton>
-        <BigTextBigBlueButton>글자도 커다란 파란색 버튼</BigTextBigBlueButton>
+        {/* <BigTextBigBlueButton>글자도 커다란 파란색 버튼</BigTextBigBlueButton> */}
+        <propsButton backgroundColor="yellow" textColor="green">
+          Props 버튼
+        </propsButton>
       </Container>
     </>
   );
