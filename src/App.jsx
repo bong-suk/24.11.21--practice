@@ -1,4 +1,3 @@
-import "./App.css";
 import styled from "styled-components";
 
 const BlueButton = styled.button`
