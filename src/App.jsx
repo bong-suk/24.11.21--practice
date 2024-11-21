@@ -6,7 +6,11 @@ const BlueButton = styled.button`
   padding: 10px;
   border-radius: 4px;
   margin: 10px;
-  width: 200px;
+`;
+
+const BigBlueButton = styled(BlueButton)`
+  width: 300px;
+  padding: 20px;
 `;
 
 const Container = styled.div`
@@ -22,6 +26,7 @@ function App() {
       <Container>
         <div>hello</div>
         <BlueButton>파란색 버튼</BlueButton>
+        <BigBlueButton>커다란 파란색 버튼</BigBlueButton>
       </Container>
     </>
   );
