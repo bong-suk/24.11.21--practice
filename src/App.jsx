@@ -20,6 +20,11 @@ const Container = styled.div`
   place-items: center;
 `;
 
+const BigTextBigBlueButton = styled(BigBlueButton)`
+  font-size: 30px;
+  font-weight: 900;
+`;
+
 function App() {
   return (
     <>
@@ -27,6 +32,7 @@ function App() {
         <div>hello</div>
         <BlueButton>파란색 버튼</BlueButton>
         <BigBlueButton>커다란 파란색 버튼</BigBlueButton>
+        <BigTextBigBlueButton>글자도 커다란 파란색 버튼</BigTextBigBlueButton>
       </Container>
     </>
   );
